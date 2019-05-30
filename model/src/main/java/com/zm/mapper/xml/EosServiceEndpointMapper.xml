@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.EosServiceEndpointMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.EosServiceEndpoint">
+        <id column="GLOBAL_ID" property="globalId" />
+        <result column="SERVICE_NAME" property="serviceName" />
+        <result column="HOST" property="host" />
+        <result column="PORT" property="port" />
+        <result column="PROTROL" property="protrol" />
+        <result column="CONTEXT" property="context" />
+        <result column="TYPE" property="type" />
+        <result column="PRIORITY" property="priority" />
+        <result column="APP_NAME" property="appName" />
+        <result column="EXTENSION1" property="extension1" />
+        <result column="EXTENSION2" property="extension2" />
+        <result column="EXTENSION3" property="extension3" />
+        <result column="EXTENSION4" property="extension4" />
+        <result column="EXTENSION5" property="extension5" />
+        <result column="EXTENSION6" property="extension6" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        GLOBAL_ID AS globalId, SERVICE_NAME AS serviceName, HOST AS host, PORT AS port, PROTROL AS protrol, CONTEXT AS context, TYPE AS type, PRIORITY AS priority, APP_NAME AS appName, EXTENSION1 AS extension1, EXTENSION2 AS extension2, EXTENSION3 AS extension3, EXTENSION4 AS extension4, EXTENSION5 AS extension5, EXTENSION6 AS extension6
+    </sql>
+
+</mapper>

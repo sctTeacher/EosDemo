@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WftransctrlMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wftransctrl">
+        <id column="TRANSCTRLID" property="transctrlid" />
+        <result column="SRCACTDEFID" property="srcactdefid" />
+        <result column="DESTACTDEFID" property="destactdefid" />
+        <result column="SRCACTDEFNAME" property="srcactdefname" />
+        <result column="DESTACTDEFNAME" property="destactdefname" />
+        <result column="LASTTRANSTIME" property="lasttranstime" />
+        <result column="TRANSWEIGHT" property="transweight" />
+        <result column="PROCESSINSTID" property="processinstid" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        TRANSCTRLID AS transctrlid, SRCACTDEFID AS srcactdefid, DESTACTDEFID AS destactdefid, SRCACTDEFNAME AS srcactdefname, DESTACTDEFNAME AS destactdefname, LASTTRANSTIME AS lasttranstime, TRANSWEIGHT AS transweight, PROCESSINSTID AS processinstid, EXTEND1 AS extend1, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

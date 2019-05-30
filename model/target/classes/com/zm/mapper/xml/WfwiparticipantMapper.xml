@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfwiparticipantMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wfwiparticipant">
+        <id column="WIPARTICID" property="wiparticid" />
+        <result column="WORKITEMID" property="workitemid" />
+        <result column="PARTICIPANTTYPE" property="participanttype" />
+        <result column="PARTICIPANTID" property="participantid" />
+        <result column="PARTICIPANTNAME" property="participantname" />
+        <result column="PARTIINTYPE" property="partiintype" />
+        <result column="DELEGATETYPE" property="delegatetype" />
+        <result column="PARTICIPANTINDEX" property="participantindex" />
+        <result column="GLOBALID" property="globalid" />
+        <result column="WORKITEMNAME" property="workitemname" />
+        <result column="WORKITEMTYPE" property="workitemtype" />
+        <result column="WORKITEMDESC" property="workitemdesc" />
+        <result column="CURRENTSTATE" property="currentstate" />
+        <result column="PARTICIPANT" property="participant" />
+        <result column="PRIORITY" property="priority" />
+        <result column="ISTIMEOUT" property="istimeout" />
+        <result column="LIMITNUM" property="limitnum" />
+        <result column="LIMITNUMDESC" property="limitnumdesc" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="STARTTIME" property="starttime" />
+        <result column="ENDTIME" property="endtime" />
+        <result column="FINALTIME" property="finaltime" />
+        <result column="REMINDTIME" property="remindtime" />
+        <result column="ACTIONURL" property="actionurl" />
+        <result column="PROCESSINSTID" property="processinstid" />
+        <result column="ACTIVITYINSTID" property="activityinstid" />
+        <result column="STATESLIST" property="stateslist" />
+        <result column="TIMEOUTNUM" property="timeoutnum" />
+        <result column="TIMEOUTNUMDESC" property="timeoutnumdesc" />
+        <result column="PROCESSINSTNAME" property="processinstname" />
+        <result column="ACTIVITYINSTNAME" property="activityinstname" />
+        <result column="PROCESSDEFID" property="processdefid" />
+        <result column="PROCESSDEFNAME" property="processdefname" />
+        <result column="PROCESSCHNAME" property="processchname" />
+        <result column="ACTIVITYDEFID" property="activitydefid" />
+        <result column="ASSISTANT" property="assistant" />
+        <result column="BIZSTATE" property="bizstate" />
+        <result column="ALLOWAGENT" property="allowagent" />
+        <result column="PARTINAME" property="partiname" />
+        <result column="ASSISTANTNAME" property="assistantname" />
+        <result column="ROOTPROCINSTID" property="rootprocinstid" />
+        <result column="ACTIONMASK" property="actionmask" />
+        <result column="URLTYPE" property="urltype" />
+        <result column="DEALRESULT" property="dealresult" />
+        <result column="DEALOPINION" property="dealopinion" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="EXTEND2" property="extend2" />
+        <result column="EXTEND3" property="extend3" />
+        <result column="EXTEND4" property="extend4" />
+        <result column="EXTEND5" property="extend5" />
+        <result column="CATALOGUUID" property="cataloguuid" />
+        <result column="CATALOGNAME" property="catalogname" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="PRESSNUM" property="pressnum" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        WIPARTICID AS wiparticid, WORKITEMID AS workitemid, PARTICIPANTTYPE AS participanttype, PARTICIPANTID AS participantid, PARTICIPANTNAME AS participantname, PARTIINTYPE AS partiintype, DELEGATETYPE AS delegatetype, PARTICIPANTINDEX AS participantindex, GLOBALID AS globalid, WORKITEMNAME AS workitemname, WORKITEMTYPE AS workitemtype, WORKITEMDESC AS workitemdesc, CURRENTSTATE AS currentstate, PARTICIPANT AS participant, PRIORITY AS priority, ISTIMEOUT AS istimeout, LIMITNUM AS limitnum, LIMITNUMDESC AS limitnumdesc, CREATETIME AS createtime, STARTTIME AS starttime, ENDTIME AS endtime, FINALTIME AS finaltime, REMINDTIME AS remindtime, ACTIONURL AS actionurl, PROCESSINSTID AS processinstid, ACTIVITYINSTID AS activityinstid, STATESLIST AS stateslist, TIMEOUTNUM AS timeoutnum, TIMEOUTNUMDESC AS timeoutnumdesc, PROCESSINSTNAME AS processinstname, ACTIVITYINSTNAME AS activityinstname, PROCESSDEFID AS processdefid, PROCESSDEFNAME AS processdefname, PROCESSCHNAME AS processchname, ACTIVITYDEFID AS activitydefid, ASSISTANT AS assistant, BIZSTATE AS bizstate, ALLOWAGENT AS allowagent, PARTINAME AS partiname, ASSISTANTNAME AS assistantname, ROOTPROCINSTID AS rootprocinstid, ACTIONMASK AS actionmask, URLTYPE AS urltype, DEALRESULT AS dealresult, DEALOPINION AS dealopinion, EXTEND1 AS extend1, EXTEND2 AS extend2, EXTEND3 AS extend3, EXTEND4 AS extend4, EXTEND5 AS extend5, CATALOGUUID AS cataloguuid, CATALOGNAME AS catalogname, TENANT_ID AS tenantId, PRESSNUM AS pressnum
+    </sql>
+
+</mapper>

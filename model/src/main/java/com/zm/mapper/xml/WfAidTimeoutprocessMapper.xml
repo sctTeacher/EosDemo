@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfAidTimeoutprocessMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfAidTimeoutprocess">
+        <id column="ITMNO" property="itmno" />
+        <result column="PROCESSDEFID" property="processdefid" />
+        <result column="PROCESSDEFNAME" property="processdefname" />
+        <result column="PROCESSDISPNAME" property="processdispname" />
+        <result column="PROCESSINSTID" property="processinstid" />
+        <result column="PROCESSINSTNAME" property="processinstname" />
+        <result column="CREATORID" property="creatorid" />
+        <result column="CREATORNAME" property="creatorname" />
+        <result column="STARTTIME" property="starttime" />
+        <result column="FINALTIME" property="finaltime" />
+        <result column="ENDTIME" property="endtime" />
+        <result column="TIMEOUTLENGTH" property="timeoutlength" />
+        <result column="MONTH" property="month" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ITMNO AS itmno, PROCESSDEFID AS processdefid, PROCESSDEFNAME AS processdefname, PROCESSDISPNAME AS processdispname, PROCESSINSTID AS processinstid, PROCESSINSTNAME AS processinstname, CREATORID AS creatorid, CREATORNAME AS creatorname, STARTTIME AS starttime, FINALTIME AS finaltime, ENDTIME AS endtime, TIMEOUTLENGTH AS timeoutlength, MONTH AS month
+    </sql>
+
+</mapper>

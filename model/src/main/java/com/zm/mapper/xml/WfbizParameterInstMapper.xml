@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfbizParameterInstMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfbizParameterInst">
+        <id column="BUSPARAMUUID" property="busparamuuid" />
+        <result column="BUSIOPTUUID" property="busioptuuid" />
+        <result column="PARAMNAME" property="paramname" />
+        <result column="PARAMMODE" property="parammode" />
+        <result column="TYPECLASS" property="typeclass" />
+        <result column="TYPEVALUE" property="typevalue" />
+        <result column="DESCRIPTION" property="description" />
+        <result column="PARAMINDEX" property="paramindex" />
+        <result column="UPTTIME" property="upttime" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        BUSPARAMUUID AS busparamuuid, BUSIOPTUUID AS busioptuuid, PARAMNAME AS paramname, PARAMMODE AS parammode, TYPECLASS AS typeclass, TYPEVALUE AS typevalue, DESCRIPTION AS description, PARAMINDEX AS paramindex, UPTTIME AS upttime, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

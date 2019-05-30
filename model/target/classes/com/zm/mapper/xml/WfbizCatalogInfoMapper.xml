@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfbizCatalogInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfbizCatalogInfo">
+        <id column="CATALOGUUID" property="cataloguuid" />
+        <result column="CATALOGNAME" property="catalogname" />
+        <result column="PARENTCATALOGUUID" property="parentcataloguuid" />
+        <result column="ISLEAF" property="isleaf" />
+        <result column="SEQ" property="seq" />
+        <result column="DEMO" property="demo" />
+        <result column="ORDERID" property="orderid" />
+        <result column="UPTTIME" property="upttime" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CATALOGUUID AS cataloguuid, CATALOGNAME AS catalogname, PARENTCATALOGUUID AS parentcataloguuid, ISLEAF AS isleaf, SEQ AS seq, DEMO AS demo, ORDERID AS orderid, UPTTIME AS upttime, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

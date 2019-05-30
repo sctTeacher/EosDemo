@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.CompWin7CustomPicturesMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.CompWin7CustomPictures">
+        <id column="CUSTOM_ID" property="customId" />
+        <result column="FILE_NAME" property="fileName" />
+        <result column="USER_ID" property="userId" />
+        <result column="UPLOAD_TIME" property="uploadTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CUSTOM_ID AS customId, FILE_NAME AS fileName, USER_ID AS userId, UPLOAD_TIME AS uploadTime
+    </sql>
+
+</mapper>

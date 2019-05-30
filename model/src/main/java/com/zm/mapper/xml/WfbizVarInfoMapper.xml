@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfbizVarInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfbizVarInfo">
+        <id column="BUSIVARUUID" property="busivaruuid" />
+        <result column="BUSIVARNAME" property="busivarname" />
+        <result column="CATALOGUUID" property="cataloguuid" />
+        <result column="BUSIVARIMPL" property="busivarimpl" />
+        <result column="BUSIVARSCOPE" property="busivarscope" />
+        <result column="MARK" property="mark" />
+        <result column="MDFSTATE" property="mdfstate" />
+        <result column="UPTTIME" property="upttime" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        BUSIVARUUID AS busivaruuid, BUSIVARNAME AS busivarname, CATALOGUUID AS cataloguuid, BUSIVARIMPL AS busivarimpl, BUSIVARSCOPE AS busivarscope, MARK AS mark, MDFSTATE AS mdfstate, UPTTIME AS upttime, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

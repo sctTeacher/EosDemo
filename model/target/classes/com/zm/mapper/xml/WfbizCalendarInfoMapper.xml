@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfbizCalendarInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfbizCalendarInfo">
+        <id column="CALENDARUUID" property="calendaruuid" />
+        <result column="CALENDARNAME" property="calendarname" />
+        <result column="PERIOD1BEGIN" property="period1begin" />
+        <result column="PERIOD1END" property="period1end" />
+        <result column="PERIOD2BEGIN" property="period2begin" />
+        <result column="PERIOD2END" property="period2end" />
+        <result column="PERIOD3BEGIN" property="period3begin" />
+        <result column="PERIOD3END" property="period3end" />
+        <result column="PERIOD4BEGIN" property="period4begin" />
+        <result column="PERIOD4END" property="period4end" />
+        <result column="ISDEFAULT" property="isdefault" />
+        <result column="REMARK" property="remark" />
+        <result column="UPTTIME" property="upttime" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CALENDARUUID AS calendaruuid, CALENDARNAME AS calendarname, PERIOD1BEGIN AS period1begin, PERIOD1END AS period1end, PERIOD2BEGIN AS period2begin, PERIOD2END AS period2end, PERIOD3BEGIN AS period3begin, PERIOD3END AS period3end, PERIOD4BEGIN AS period4begin, PERIOD4END AS period4end, ISDEFAULT AS isdefault, REMARK AS remark, UPTTIME AS upttime, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

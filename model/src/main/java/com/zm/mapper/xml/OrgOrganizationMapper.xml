@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.OrgOrganizationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.OrgOrganization">
+        <id column="ORGID" property="orgid" />
+        <result column="ORGCODE" property="orgcode" />
+        <result column="ORGNAME" property="orgname" />
+        <result column="ORGLEVEL" property="orglevel" />
+        <result column="ORGDEGREE" property="orgdegree" />
+        <result column="ORGSEQ" property="orgseq" />
+        <result column="ORGTYPE" property="orgtype" />
+        <result column="ORGADDR" property="orgaddr" />
+        <result column="ZIPCODE" property="zipcode" />
+        <result column="MANAPOSITION" property="manaposition" />
+        <result column="MANAGERID" property="managerid" />
+        <result column="ORGMANAGER" property="orgmanager" />
+        <result column="LINKMAN" property="linkman" />
+        <result column="LINKTEL" property="linktel" />
+        <result column="EMAIL" property="email" />
+        <result column="WEBURL" property="weburl" />
+        <result column="STARTDATE" property="startdate" />
+        <result column="ENDDATE" property="enddate" />
+        <result column="STATUS" property="status" />
+        <result column="AREA" property="area" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="LASTUPDATE" property="lastupdate" />
+        <result column="UPDATOR" property="updator" />
+        <result column="SORTNO" property="sortno" />
+        <result column="ISLEAF" property="isleaf" />
+        <result column="SUBCOUNT" property="subcount" />
+        <result column="REMARK" property="remark" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="APP_ID" property="appId" />
+        <result column="PARENTORGID" property="parentorgid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ORGID AS orgid, ORGCODE AS orgcode, ORGNAME AS orgname, ORGLEVEL AS orglevel, ORGDEGREE AS orgdegree, ORGSEQ AS orgseq, ORGTYPE AS orgtype, ORGADDR AS orgaddr, ZIPCODE AS zipcode, MANAPOSITION AS manaposition, MANAGERID AS managerid, ORGMANAGER AS orgmanager, LINKMAN AS linkman, LINKTEL AS linktel, EMAIL AS email, WEBURL AS weburl, STARTDATE AS startdate, ENDDATE AS enddate, STATUS AS status, AREA AS area, CREATETIME AS createtime, LASTUPDATE AS lastupdate, UPDATOR AS updator, SORTNO AS sortno, ISLEAF AS isleaf, SUBCOUNT AS subcount, REMARK AS remark, TENANT_ID AS tenantId, APP_ID AS appId, PARENTORGID AS parentorgid
+    </sql>
+
+</mapper>

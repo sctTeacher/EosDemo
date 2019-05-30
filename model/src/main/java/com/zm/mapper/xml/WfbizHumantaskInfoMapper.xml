@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfbizHumantaskInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfbizHumantaskInfo">
+        <id column="HUMANTASKUUID" property="humantaskuuid" />
+        <result column="HUMANTASKNAME" property="humantaskname" />
+        <result column="CATALOGUUID" property="cataloguuid" />
+        <result column="HUMANTASKIMPL" property="humantaskimpl" />
+        <result column="HUMANTASKTYPE" property="humantasktype" />
+        <result column="MARK" property="mark" />
+        <result column="MDFSTATE" property="mdfstate" />
+        <result column="UPTTIME" property="upttime" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        HUMANTASKUUID AS humantaskuuid, HUMANTASKNAME AS humantaskname, CATALOGUUID AS cataloguuid, HUMANTASKIMPL AS humantaskimpl, HUMANTASKTYPE AS humantasktype, MARK AS mark, MDFSTATE AS mdfstate, UPTTIME AS upttime, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

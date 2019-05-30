@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.EosQrtzCronTriggersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.EosQrtzCronTriggers">
+        <id column="TRIGGER_NAME" property="triggerName" />
+        <result column="TRIGGER_GROUP" property="triggerGroup" />
+        <result column="CRON_EXPRESSION" property="cronExpression" />
+        <result column="TIME_ZONE_ID" property="timeZoneId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        TRIGGER_NAME AS triggerName, TRIGGER_GROUP AS triggerGroup, CRON_EXPRESSION AS cronExpression, TIME_ZONE_ID AS timeZoneId
+    </sql>
+
+</mapper>

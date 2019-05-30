@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.AppApplicationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.AppApplication">
+        <id column="APPID" property="appid" />
+        <result column="APPCODE" property="appcode" />
+        <result column="APPNAME" property="appname" />
+        <result column="APPTYPE" property="apptype" />
+        <result column="ISOPEN" property="isopen" />
+        <result column="OPENDATE" property="opendate" />
+        <result column="URL" property="url" />
+        <result column="APPDESC" property="appdesc" />
+        <result column="MAINTENANCE" property="maintenance" />
+        <result column="MANAROLE" property="manarole" />
+        <result column="DEMO" property="demo" />
+        <result column="INIWP" property="iniwp" />
+        <result column="INTASKCENTER" property="intaskcenter" />
+        <result column="IPADDR" property="ipaddr" />
+        <result column="IPPORT" property="ipport" />
+        <result column="APP_ID" property="appId" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="PROTOCOL_TYPE" property="protocolType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        APPID AS appid, APPCODE AS appcode, APPNAME AS appname, APPTYPE AS apptype, ISOPEN AS isopen, OPENDATE AS opendate, URL AS url, APPDESC AS appdesc, MAINTENANCE AS maintenance, MANAROLE AS manarole, DEMO AS demo, INIWP AS iniwp, INTASKCENTER AS intaskcenter, IPADDR AS ipaddr, IPPORT AS ipport, APP_ID AS appId, TENANT_ID AS tenantId, PROTOCOL_TYPE AS protocolType
+    </sql>
+
+</mapper>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.OrgEmployeeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.OrgEmployee">
+        <id column="EMPID" property="empid" />
+        <result column="EMPCODE" property="empcode" />
+        <result column="OPERATORID" property="operatorid" />
+        <result column="USERID" property="userid" />
+        <result column="EMPNAME" property="empname" />
+        <result column="REALNAME" property="realname" />
+        <result column="GENDER" property="gender" />
+        <result column="BIRTHDATE" property="birthdate" />
+        <result column="POSITION" property="position" />
+        <result column="EMPSTATUS" property="empstatus" />
+        <result column="CARDTYPE" property="cardtype" />
+        <result column="CARDNO" property="cardno" />
+        <result column="INDATE" property="indate" />
+        <result column="OUTDATE" property="outdate" />
+        <result column="OTEL" property="otel" />
+        <result column="OADDRESS" property="oaddress" />
+        <result column="OZIPCODE" property="ozipcode" />
+        <result column="OEMAIL" property="oemail" />
+        <result column="FAXNO" property="faxno" />
+        <result column="MOBILENO" property="mobileno" />
+        <result column="QQ" property="qq" />
+        <result column="HTEL" property="htel" />
+        <result column="HADDRESS" property="haddress" />
+        <result column="HZIPCODE" property="hzipcode" />
+        <result column="PEMAIL" property="pemail" />
+        <result column="PARTY" property="party" />
+        <result column="DEGREE" property="degree" />
+        <result column="SORTNO" property="sortno" />
+        <result column="MAJOR" property="major" />
+        <result column="SPECIALTY" property="specialty" />
+        <result column="WORKEXP" property="workexp" />
+        <result column="REGDATE" property="regdate" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="LASTMODYTIME" property="lastmodytime" />
+        <result column="ORGIDLIST" property="orgidlist" />
+        <result column="ORGID" property="orgid" />
+        <result column="REMARK" property="remark" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="APP_ID" property="appId" />
+        <result column="WEIBO" property="weibo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        EMPID AS empid, EMPCODE AS empcode, OPERATORID AS operatorid, USERID AS userid, EMPNAME AS empname, REALNAME AS realname, GENDER AS gender, BIRTHDATE AS birthdate, POSITION AS position, EMPSTATUS AS empstatus, CARDTYPE AS cardtype, CARDNO AS cardno, INDATE AS indate, OUTDATE AS outdate, OTEL AS otel, OADDRESS AS oaddress, OZIPCODE AS ozipcode, OEMAIL AS oemail, FAXNO AS faxno, MOBILENO AS mobileno, QQ AS qq, HTEL AS htel, HADDRESS AS haddress, HZIPCODE AS hzipcode, PEMAIL AS pemail, PARTY AS party, DEGREE AS degree, SORTNO AS sortno, MAJOR AS major, SPECIALTY AS specialty, WORKEXP AS workexp, REGDATE AS regdate, CREATETIME AS createtime, LASTMODYTIME AS lastmodytime, ORGIDLIST AS orgidlist, ORGID AS orgid, REMARK AS remark, TENANT_ID AS tenantId, APP_ID AS appId, WEIBO AS weibo
+    </sql>
+
+</mapper>

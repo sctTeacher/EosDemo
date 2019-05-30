@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfbizCalepartiRelationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfbizCalepartiRelation">
+        <id column="PARTICALEUUID" property="particaleuuid" />
+        <result column="PARTITYPE" property="partitype" />
+        <result column="PARTIID" property="partiid" />
+        <result column="PARTINAME" property="partiname" />
+        <result column="CALENDARUUID" property="calendaruuid" />
+        <result column="CALETYPE" property="caletype" />
+        <result column="UPTTIME" property="upttime" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PARTICALEUUID AS particaleuuid, PARTITYPE AS partitype, PARTIID AS partiid, PARTINAME AS partiname, CALENDARUUID AS calendaruuid, CALETYPE AS caletype, UPTTIME AS upttime, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

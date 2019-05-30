@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfserverinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wfserverinfo">
+        <id column="SERVERNAME" property="servername" />
+        <result column="GROUPID" property="groupid" />
+        <result column="STATUS" property="status" />
+        <result column="STARTTIME" property="starttime" />
+        <result column="ASSISTANT" property="assistant" />
+        <result column="ASSISTEDTIME" property="assistedtime" />
+        <result column="HEARTBEATTIME" property="heartbeattime" />
+        <result column="HEARTBEATINTERVAL" property="heartbeatinterval" />
+        <result column="HEARTBEATDELAY" property="heartbeatdelay" />
+        <result column="PROPERTIES" property="properties" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="EXTEND2" property="extend2" />
+        <result column="EXTEND3" property="extend3" />
+        <result column="EXTEND4" property="extend4" />
+        <result column="EXTEND5" property="extend5" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        SERVERNAME AS servername, GROUPID AS groupid, STATUS AS status, STARTTIME AS starttime, ASSISTANT AS assistant, ASSISTEDTIME AS assistedtime, HEARTBEATTIME AS heartbeattime, HEARTBEATINTERVAL AS heartbeatinterval, HEARTBEATDELAY AS heartbeatdelay, PROPERTIES AS properties, EXTEND1 AS extend1, EXTEND2 AS extend2, EXTEND3 AS extend3, EXTEND4 AS extend4, EXTEND5 AS extend5
+    </sql>
+
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.CompWin7ConfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.CompWin7Config">
+        <id column="CONFIG_ID" property="configId" />
+        <result column="BG_PICTURE_PATH" property="bgPicturePath" />
+        <result column="USER_ID" property="userId" />
+        <result column="CONFIG_DATA" property="configData" />
+        <result column="OPEN_TYPE" property="openType" />
+        <result column="DEFAULT_MAX" property="defaultMax" />
+        <result column="DEFAULT_WIDTH" property="defaultWidth" />
+        <result column="DEFAULT_HEIGHT" property="defaultHeight" />
+        <result column="DESK_STYLE" property="deskStyle" />
+        <result column="EXT1" property="ext1" />
+        <result column="EXT2" property="ext2" />
+        <result column="EXT3" property="ext3" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CONFIG_ID AS configId, BG_PICTURE_PATH AS bgPicturePath, USER_ID AS userId, CONFIG_DATA AS configData, OPEN_TYPE AS openType, DEFAULT_MAX AS defaultMax, DEFAULT_WIDTH AS defaultWidth, DEFAULT_HEIGHT AS defaultHeight, DESK_STYLE AS deskStyle, EXT1 AS ext1, EXT2 AS ext2, EXT3 AS ext3
+    </sql>
+
+</mapper>

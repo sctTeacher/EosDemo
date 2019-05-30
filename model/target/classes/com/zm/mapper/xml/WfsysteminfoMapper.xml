@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfsysteminfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wfsysteminfo">
+        <id column="CONFIGKEY" property="configkey" />
+        <result column="CONFIGVALUE" property="configvalue" />
+        <result column="CONFIGDESC" property="configdesc" />
+        <result column="CONFIGTYPE" property="configtype" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        CONFIGKEY AS configkey, CONFIGVALUE AS configvalue, CONFIGDESC AS configdesc, CONFIGTYPE AS configtype
+    </sql>
+
+</mapper>

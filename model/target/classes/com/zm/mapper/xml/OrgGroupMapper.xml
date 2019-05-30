@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.OrgGroupMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.OrgGroup">
+        <id column="GROUPID" property="groupid" />
+        <result column="ORGID" property="orgid" />
+        <result column="GROUPLEVEL" property="grouplevel" />
+        <result column="GROUPNAME" property="groupname" />
+        <result column="GROUPDESC" property="groupdesc" />
+        <result column="GROUPTYPE" property="grouptype" />
+        <result column="GROUPSEQ" property="groupseq" />
+        <result column="STARTDATE" property="startdate" />
+        <result column="ENDDATE" property="enddate" />
+        <result column="GROUPSTATUS" property="groupstatus" />
+        <result column="MANAGER" property="manager" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="LASTUPDATE" property="lastupdate" />
+        <result column="UPDATOR" property="updator" />
+        <result column="ISLEAF" property="isleaf" />
+        <result column="SUBCOUNT" property="subcount" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="APP_ID" property="appId" />
+        <result column="PARENTGROUPID" property="parentgroupid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        GROUPID AS groupid, ORGID AS orgid, GROUPLEVEL AS grouplevel, GROUPNAME AS groupname, GROUPDESC AS groupdesc, GROUPTYPE AS grouptype, GROUPSEQ AS groupseq, STARTDATE AS startdate, ENDDATE AS enddate, GROUPSTATUS AS groupstatus, MANAGER AS manager, CREATETIME AS createtime, LASTUPDATE AS lastupdate, UPDATOR AS updator, ISLEAF AS isleaf, SUBCOUNT AS subcount, TENANT_ID AS tenantId, APP_ID AS appId, PARENTGROUPID AS parentgroupid
+    </sql>
+
+</mapper>

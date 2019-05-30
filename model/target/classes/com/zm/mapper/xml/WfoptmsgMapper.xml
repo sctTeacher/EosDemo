@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfoptmsgMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wfoptmsg">
+        <id column="MESSAGEID" property="messageid" />
+        <result column="PRODUCER" property="producer" />
+        <result column="RECEIVER" property="receiver" />
+        <result column="OPERATIONTYPE" property="operationtype" />
+        <result column="CORRELATIONTYPE" property="correlationtype" />
+        <result column="CORRELATIONID" property="correlationid" />
+        <result column="CONTENT" property="content" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="PROCESSDEFID" property="processdefid" />
+        <result column="PROCESSINSTID" property="processinstid" />
+        <result column="ACTIVITYINSTID" property="activityinstid" />
+        <result column="WORKITEMID" property="workitemid" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="EXTEND2" property="extend2" />
+        <result column="EXTEND3" property="extend3" />
+        <result column="EXTEND4" property="extend4" />
+        <result column="EXTEND5" property="extend5" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MESSAGEID AS messageid, PRODUCER AS producer, RECEIVER AS receiver, OPERATIONTYPE AS operationtype, CORRELATIONTYPE AS correlationtype, CORRELATIONID AS correlationid, CONTENT AS content, CREATETIME AS createtime, PROCESSDEFID AS processdefid, PROCESSINSTID AS processinstid, ACTIVITYINSTID AS activityinstid, WORKITEMID AS workitemid, TENANT_ID AS tenantId, EXTEND1 AS extend1, EXTEND2 AS extend2, EXTEND3 AS extend3, EXTEND4 AS extend4, EXTEND5 AS extend5
+    </sql>
+
+</mapper>

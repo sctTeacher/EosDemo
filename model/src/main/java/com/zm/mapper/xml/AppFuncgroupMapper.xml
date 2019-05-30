@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.AppFuncgroupMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.AppFuncgroup">
+        <id column="FUNCGROUPID" property="funcgroupid" />
+        <result column="FUNCGROUPNAME" property="funcgroupname" />
+        <result column="GROUPLEVEL" property="grouplevel" />
+        <result column="FUNCGROUPSEQ" property="funcgroupseq" />
+        <result column="ISLEAF" property="isleaf" />
+        <result column="SUBCOUNT" property="subcount" />
+        <result column="APP_ID" property="appId" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="PARENTGROUP" property="parentgroup" />
+        <result column="APPID" property="appid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        FUNCGROUPID AS funcgroupid, FUNCGROUPNAME AS funcgroupname, GROUPLEVEL AS grouplevel, FUNCGROUPSEQ AS funcgroupseq, ISLEAF AS isleaf, SUBCOUNT AS subcount, APP_ID AS appId, TENANT_ID AS tenantId, PARENTGROUP AS parentgroup, APPID AS appid
+    </sql>
+
+</mapper>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.EosQrtzFiredTriggersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.EosQrtzFiredTriggers">
+        <id column="ENTRY_ID" property="entryId" />
+        <result column="TRIGGER_NAME" property="triggerName" />
+        <result column="TRIGGER_GROUP" property="triggerGroup" />
+        <result column="IS_VOLATILE" property="isVolatile" />
+        <result column="INSTANCE_NAME" property="instanceName" />
+        <result column="FIRED_TIME" property="firedTime" />
+        <result column="STATE" property="state" />
+        <result column="JOB_NAME" property="jobName" />
+        <result column="JOB_GROUP" property="jobGroup" />
+        <result column="IS_STATEFUL" property="isStateful" />
+        <result column="REQUESTS_RECOVERY" property="requestsRecovery" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ENTRY_ID AS entryId, TRIGGER_NAME AS triggerName, TRIGGER_GROUP AS triggerGroup, IS_VOLATILE AS isVolatile, INSTANCE_NAME AS instanceName, FIRED_TIME AS firedTime, STATE AS state, JOB_NAME AS jobName, JOB_GROUP AS jobGroup, IS_STATEFUL AS isStateful, REQUESTS_RECOVERY AS requestsRecovery
+    </sql>
+
+</mapper>

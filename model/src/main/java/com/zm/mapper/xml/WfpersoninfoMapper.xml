@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfpersoninfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wfpersoninfo">
+        <id column="PERSONID" property="personid" />
+        <result column="USEDEFAGTSCOPE" property="usedefagtscope" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="EXTEND2" property="extend2" />
+        <result column="EXTEND3" property="extend3" />
+        <result column="EXTEND4" property="extend4" />
+        <result column="EXTEND5" property="extend5" />
+        <result column="EXTEND6" property="extend6" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PERSONID AS personid, USEDEFAGTSCOPE AS usedefagtscope, EXTEND1 AS extend1, EXTEND2 AS extend2, EXTEND3 AS extend3, EXTEND4 AS extend4, EXTEND5 AS extend5, EXTEND6 AS extend6, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

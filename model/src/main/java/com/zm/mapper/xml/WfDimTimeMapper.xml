@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfDimTimeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfDimTime">
+        <id column="MONTH" property="month" />
+        <result column="YEAR" property="year" />
+        <result column="YEARNAME" property="yearname" />
+        <result column="QUARTER" property="quarter" />
+        <result column="QUARTERNAME" property="quartername" />
+        <result column="MONTHNAME" property="monthname" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        YEAR AS year, YEARNAME AS yearname, QUARTER AS quarter, QUARTERNAME AS quartername, MONTH AS month, MONTHNAME AS monthname
+    </sql>
+
+</mapper>

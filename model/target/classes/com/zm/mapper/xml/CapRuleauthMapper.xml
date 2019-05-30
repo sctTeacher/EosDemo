@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.CapRuleauthMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.CapRuleauth">
+        <id column="RULEAUTH_ID" property="ruleauthId" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="RULE_ID" property="ruleId" />
+        <result column="RES_ID" property="resId" />
+        <result column="RES_TYPE" property="resType" />
+        <result column="RES_STATE" property="resState" />
+        <result column="CREATEUSER" property="createuser" />
+        <result column="CREATETIME" property="createtime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        RULEAUTH_ID AS ruleauthId, TENANT_ID AS tenantId, RULE_ID AS ruleId, RES_ID AS resId, RES_TYPE AS resType, RES_STATE AS resState, CREATEUSER AS createuser, CREATETIME AS createtime
+    </sql>
+
+</mapper>

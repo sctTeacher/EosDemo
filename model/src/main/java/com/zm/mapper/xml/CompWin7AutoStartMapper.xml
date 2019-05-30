@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.CompWin7AutoStartMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.CompWin7AutoStart">
+        <id column="START_ID" property="startId" />
+        <result column="MENU_ID" property="menuId" />
+        <result column="START_DESC" property="startDesc" />
+        <result column="USER_ID" property="userId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        START_ID AS startId, MENU_ID AS menuId, START_DESC AS startDesc, USER_ID AS userId
+    </sql>
+
+</mapper>

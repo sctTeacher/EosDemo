@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfHBizinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfHBizinfo">
+        <id column="PROCESSINSTID" property="processinstid" />
+        <result column="BIZTABLENAME" property="biztablename" />
+        <result column="VCCOLUMN1" property="vccolumn1" />
+        <result column="VCCOLUMN2" property="vccolumn2" />
+        <result column="VCCOLUMN3" property="vccolumn3" />
+        <result column="VCCOLUMN4" property="vccolumn4" />
+        <result column="VCCOLUMN5" property="vccolumn5" />
+        <result column="VCCOLUMN6" property="vccolumn6" />
+        <result column="VCCOLUMN7" property="vccolumn7" />
+        <result column="VCCOLUMN8" property="vccolumn8" />
+        <result column="VCCOLUMN9" property="vccolumn9" />
+        <result column="VCCOLUMN10" property="vccolumn10" />
+        <result column="NMCOLUMN1" property="nmcolumn1" />
+        <result column="NMCOLUMN2" property="nmcolumn2" />
+        <result column="NMCOLUMN3" property="nmcolumn3" />
+        <result column="NMCOLUMN4" property="nmcolumn4" />
+        <result column="NMCOLUMN5" property="nmcolumn5" />
+        <result column="NMCOLUMN6" property="nmcolumn6" />
+        <result column="NMCOLUMN7" property="nmcolumn7" />
+        <result column="NMCOLUMN8" property="nmcolumn8" />
+        <result column="NMCOLUMN9" property="nmcolumn9" />
+        <result column="NMCOLUMN10" property="nmcolumn10" />
+        <result column="DTCOLUMN1" property="dtcolumn1" />
+        <result column="DTCOLUMN2" property="dtcolumn2" />
+        <result column="DTCOLUMN3" property="dtcolumn3" />
+        <result column="DTCOLUMN4" property="dtcolumn4" />
+        <result column="DTCOLUMN5" property="dtcolumn5" />
+        <result column="DTCOLUMN6" property="dtcolumn6" />
+        <result column="DTCOLUMN7" property="dtcolumn7" />
+        <result column="DTCOLUMN8" property="dtcolumn8" />
+        <result column="DTCOLUMN9" property="dtcolumn9" />
+        <result column="DTCOLUMN10" property="dtcolumn10" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PROCESSINSTID AS processinstid, BIZTABLENAME AS biztablename, VCCOLUMN1 AS vccolumn1, VCCOLUMN2 AS vccolumn2, VCCOLUMN3 AS vccolumn3, VCCOLUMN4 AS vccolumn4, VCCOLUMN5 AS vccolumn5, VCCOLUMN6 AS vccolumn6, VCCOLUMN7 AS vccolumn7, VCCOLUMN8 AS vccolumn8, VCCOLUMN9 AS vccolumn9, VCCOLUMN10 AS vccolumn10, NMCOLUMN1 AS nmcolumn1, NMCOLUMN2 AS nmcolumn2, NMCOLUMN3 AS nmcolumn3, NMCOLUMN4 AS nmcolumn4, NMCOLUMN5 AS nmcolumn5, NMCOLUMN6 AS nmcolumn6, NMCOLUMN7 AS nmcolumn7, NMCOLUMN8 AS nmcolumn8, NMCOLUMN9 AS nmcolumn9, NMCOLUMN10 AS nmcolumn10, DTCOLUMN1 AS dtcolumn1, DTCOLUMN2 AS dtcolumn2, DTCOLUMN3 AS dtcolumn3, DTCOLUMN4 AS dtcolumn4, DTCOLUMN5 AS dtcolumn5, DTCOLUMN6 AS dtcolumn6, DTCOLUMN7 AS dtcolumn7, DTCOLUMN8 AS dtcolumn8, DTCOLUMN9 AS dtcolumn9, DTCOLUMN10 AS dtcolumn10
+    </sql>
+
+</mapper>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfagentitemMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wfagentitem">
+        <id column="AGENTITEMID" property="agentitemid" />
+        <result column="ITEMTYPE" property="itemtype" />
+        <result column="ITEMID" property="itemid" />
+        <result column="VALID" property="valid" />
+        <result column="ACCESSTYPE" property="accesstype" />
+        <result column="AGENTID" property="agentid" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="EXTEND2" property="extend2" />
+        <result column="EXTEND3" property="extend3" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        AGENTITEMID AS agentitemid, ITEMTYPE AS itemtype, ITEMID AS itemid, VALID AS valid, ACCESSTYPE AS accesstype, AGENTID AS agentid, EXTEND1 AS extend1, EXTEND2 AS extend2, EXTEND3 AS extend3, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

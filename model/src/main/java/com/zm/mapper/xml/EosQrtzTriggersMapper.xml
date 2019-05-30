@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.EosQrtzTriggersMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.EosQrtzTriggers">
+        <id column="TRIGGER_NAME" property="triggerName" />
+        <result column="TRIGGER_GROUP" property="triggerGroup" />
+        <result column="IS_VOLATILE" property="isVolatile" />
+        <result column="DESCRIPTION" property="description" />
+        <result column="NEXT_FIRE_TIME" property="nextFireTime" />
+        <result column="PREV_FIRE_TIME" property="prevFireTime" />
+        <result column="TRIGGER_STATE" property="triggerState" />
+        <result column="TRIGGER_TYPE" property="triggerType" />
+        <result column="START_TIME" property="startTime" />
+        <result column="END_TIME" property="endTime" />
+        <result column="CALENDAR_NAME" property="calendarName" />
+        <result column="MISFIRE_INSTR" property="misfireInstr" />
+        <result column="JOB_DATA" property="jobData" />
+        <result column="JOB_NAME" property="jobName" />
+        <result column="JOB_GROUP" property="jobGroup" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        TRIGGER_NAME AS triggerName, TRIGGER_GROUP AS triggerGroup, IS_VOLATILE AS isVolatile, DESCRIPTION AS description, NEXT_FIRE_TIME AS nextFireTime, PREV_FIRE_TIME AS prevFireTime, TRIGGER_STATE AS triggerState, TRIGGER_TYPE AS triggerType, START_TIME AS startTime, END_TIME AS endTime, CALENDAR_NAME AS calendarName, MISFIRE_INSTR AS misfireInstr, JOB_DATA AS jobData, JOB_NAME AS jobName, JOB_GROUP AS jobGroup
+    </sql>
+
+</mapper>

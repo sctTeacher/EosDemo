@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.OrgPositionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.OrgPosition">
+        <id column="POSITIONID" property="positionid" />
+        <result column="POSICODE" property="posicode" />
+        <result column="POSINAME" property="posiname" />
+        <result column="POSILEVEL" property="posilevel" />
+        <result column="POSITIONSEQ" property="positionseq" />
+        <result column="POSITYPE" property="positype" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="LASTUPDATE" property="lastupdate" />
+        <result column="UPDATOR" property="updator" />
+        <result column="STARTDATE" property="startdate" />
+        <result column="ENDDATE" property="enddate" />
+        <result column="STATUS" property="status" />
+        <result column="ISLEAF" property="isleaf" />
+        <result column="SUBCOUNT" property="subcount" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="APP_ID" property="appId" />
+        <result column="DUTYID" property="dutyid" />
+        <result column="MANAPOSI" property="manaposi" />
+        <result column="ORGID" property="orgid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        POSITIONID AS positionid, POSICODE AS posicode, POSINAME AS posiname, POSILEVEL AS posilevel, POSITIONSEQ AS positionseq, POSITYPE AS positype, CREATETIME AS createtime, LASTUPDATE AS lastupdate, UPDATOR AS updator, STARTDATE AS startdate, ENDDATE AS enddate, STATUS AS status, ISLEAF AS isleaf, SUBCOUNT AS subcount, TENANT_ID AS tenantId, APP_ID AS appId, DUTYID AS dutyid, MANAPOSI AS manaposi, ORGID AS orgid
+    </sql>
+
+</mapper>

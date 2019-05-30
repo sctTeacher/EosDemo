@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfHTransitionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfHTransition">
+        <id column="TRANSITIONID" property="transitionid" />
+        <result column="TRANSITIONTYPE" property="transitiontype" />
+        <result column="CAUSEACTINSTID" property="causeactinstid" />
+        <result column="CAUSEACTINSTNAME" property="causeactinstname" />
+        <result column="RESULTACTINSTID" property="resultactinstid" />
+        <result column="RESULTACTINSTNAME" property="resultactinstname" />
+        <result column="SRCACTDEFID" property="srcactdefid" />
+        <result column="DESTACTDEFID" property="destactdefid" />
+        <result column="SRCACTDEFNAME" property="srcactdefname" />
+        <result column="DESTACTDEFNAME" property="destactdefname" />
+        <result column="TRANSTIME" property="transtime" />
+        <result column="PROCESSINSTID" property="processinstid" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        TRANSITIONID AS transitionid, TRANSITIONTYPE AS transitiontype, CAUSEACTINSTID AS causeactinstid, CAUSEACTINSTNAME AS causeactinstname, RESULTACTINSTID AS resultactinstid, RESULTACTINSTNAME AS resultactinstname, SRCACTDEFID AS srcactdefid, DESTACTDEFID AS destactdefid, SRCACTDEFNAME AS srcactdefname, DESTACTDEFNAME AS destactdefname, TRANSTIME AS transtime, PROCESSINSTID AS processinstid, EXTEND1 AS extend1, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

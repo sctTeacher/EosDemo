@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfHActivityinstMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfHActivityinst">
+        <id column="ACTIVITYINSTID" property="activityinstid" />
+        <result column="ACTIVITYINSTNAME" property="activityinstname" />
+        <result column="ACTIVITYINSTDESC" property="activityinstdesc" />
+        <result column="ACTIVITYTYPE" property="activitytype" />
+        <result column="CURRENTSTATE" property="currentstate" />
+        <result column="PRIORITY" property="priority" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="STARTTIME" property="starttime" />
+        <result column="ENDTIME" property="endtime" />
+        <result column="FINALTIME" property="finaltime" />
+        <result column="SUBPROCESSID" property="subprocessid" />
+        <result column="ACTIVITYDEFID" property="activitydefid" />
+        <result column="PROCESSINSTID" property="processinstid" />
+        <result column="ROLLBACKFLAG" property="rollbackflag" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="EXTEND2" property="extend2" />
+        <result column="EXTEND3" property="extend3" />
+        <result column="EXTEND4" property="extend4" />
+        <result column="EXTEND5" property="extend5" />
+        <result column="EXTEND6" property="extend6" />
+        <result column="EXTEND7" property="extend7" />
+        <result column="CATALOGUUID" property="cataloguuid" />
+        <result column="CATALOGNAME" property="catalogname" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ACTIVITYINSTID AS activityinstid, ACTIVITYINSTNAME AS activityinstname, ACTIVITYINSTDESC AS activityinstdesc, ACTIVITYTYPE AS activitytype, CURRENTSTATE AS currentstate, PRIORITY AS priority, CREATETIME AS createtime, STARTTIME AS starttime, ENDTIME AS endtime, FINALTIME AS finaltime, SUBPROCESSID AS subprocessid, ACTIVITYDEFID AS activitydefid, PROCESSINSTID AS processinstid, ROLLBACKFLAG AS rollbackflag, EXTEND1 AS extend1, EXTEND2 AS extend2, EXTEND3 AS extend3, EXTEND4 AS extend4, EXTEND5 AS extend5, EXTEND6 AS extend6, EXTEND7 AS extend7, CATALOGUUID AS cataloguuid, CATALOGNAME AS catalogname, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

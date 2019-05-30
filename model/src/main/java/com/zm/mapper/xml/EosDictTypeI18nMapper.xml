@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.EosDictTypeI18nMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.EosDictTypeI18n">
+        <id column="DICTTYPEID" property="dicttypeid" />
+        <result column="DICTTYPENAME" property="dicttypename" />
+        <result column="LOCALE" property="locale" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        DICTTYPEID AS dicttypeid, DICTTYPENAME AS dicttypename, LOCALE AS locale
+    </sql>
+
+</mapper>

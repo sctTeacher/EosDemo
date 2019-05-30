@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.EosQrtzJobDetailsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.EosQrtzJobDetails">
+        <id column="JOB_NAME" property="jobName" />
+        <result column="JOB_GROUP" property="jobGroup" />
+        <result column="DESCRIPTION" property="description" />
+        <result column="JOB_CLASS_NAME" property="jobClassName" />
+        <result column="IS_DURABLE" property="isDurable" />
+        <result column="IS_VOLATILE" property="isVolatile" />
+        <result column="IS_STATEFUL" property="isStateful" />
+        <result column="REQUESTS_RECOVERY" property="requestsRecovery" />
+        <result column="JOB_DATA" property="jobData" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        JOB_NAME AS jobName, JOB_GROUP AS jobGroup, DESCRIPTION AS description, JOB_CLASS_NAME AS jobClassName, IS_DURABLE AS isDurable, IS_VOLATILE AS isVolatile, IS_STATEFUL AS isStateful, REQUESTS_RECOVERY AS requestsRecovery, JOB_DATA AS jobData
+    </sql>
+
+</mapper>

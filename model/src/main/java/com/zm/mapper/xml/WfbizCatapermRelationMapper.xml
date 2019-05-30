@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfbizCatapermRelationMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfbizCatapermRelation">
+        <id column="MAPPINGID" property="mappingid" />
+        <result column="CATALOGUUID" property="cataloguuid" />
+        <result column="PERMISSIONTYPE" property="permissiontype" />
+        <result column="PARTITYPE" property="partitype" />
+        <result column="PARTIID" property="partiid" />
+        <result column="PARTINAME" property="partiname" />
+        <result column="UPTTIME" property="upttime" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MAPPINGID AS mappingid, CATALOGUUID AS cataloguuid, PERMISSIONTYPE AS permissiontype, PARTITYPE AS partitype, PARTIID AS partiid, PARTINAME AS partiname, UPTTIME AS upttime, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

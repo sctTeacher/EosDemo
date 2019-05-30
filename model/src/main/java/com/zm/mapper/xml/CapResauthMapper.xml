@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.CapResauthMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.CapResauth">
+        <id column="PARTY_ID" property="partyId" />
+        <result column="PARTY_TYPE" property="partyType" />
+        <result column="RES_ID" property="resId" />
+        <result column="RES_TYPE" property="resType" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="RES_STATE" property="resState" />
+        <result column="PARTY_SCOPE" property="partyScope" />
+        <result column="CREATEUSER" property="createuser" />
+        <result column="CREATETIME" property="createtime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        PARTY_ID AS partyId, PARTY_TYPE AS partyType, RES_ID AS resId, RES_TYPE AS resType, TENANT_ID AS tenantId, RES_STATE AS resState, PARTY_SCOPE AS partyScope, CREATEUSER AS createuser, CREATETIME AS createtime
+    </sql>
+
+</mapper>

@@ -1,0 +1,20 @@
+package com.zm.service.impl;
+
+import com.zm.model.Wftransition;
+import com.zm.mapper.WftransitionMapper;
+import com.zm.service.WftransitionService;
+import com.baomidou.mybatisplus.service.impl.ServiceImpl;
+import org.springframework.stereotype.Service;
+
+/**
+ * <p>
+ *  服务实现类
+ * </p>
+ *
+ * @author zhangfy
+ * @since 2019-05-30
+ */
+@Service
+public class WftransitionServiceImpl extends ServiceImpl<WftransitionMapper, Wftransition> implements WftransitionService {
+
+}

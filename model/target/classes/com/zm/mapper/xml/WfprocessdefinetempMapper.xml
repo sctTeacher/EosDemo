@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfprocessdefinetempMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wfprocessdefinetemp">
+        <id column="TEMPPROCESSDEFID" property="tempprocessdefid" />
+        <result column="PROCESSDEFNAME" property="processdefname" />
+        <result column="PROCESSCHNAME" property="processchname" />
+        <result column="DESCRIPTION" property="description" />
+        <result column="CURRENTSTATE" property="currentstate" />
+        <result column="VERSIONSIGN" property="versionsign" />
+        <result column="VERSIONDESC" property="versiondesc" />
+        <result column="CURRENTFLAG" property="currentflag" />
+        <result column="PROCESSDEFCONTENT" property="processdefcontent" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="UPDATETIME" property="updatetime" />
+        <result column="OPERATOR" property="operator" />
+        <result column="PROCESSDEFOWNER" property="processdefowner" />
+        <result column="PACKAGEID" property="packageid" />
+        <result column="PACKAGENAME" property="packagename" />
+        <result column="HASACTIVEINSTANCE" property="hasactiveinstance" />
+        <result column="CATALOGUUID" property="cataloguuid" />
+        <result column="MODIFYSTATE" property="modifystate" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="EXTEND2" property="extend2" />
+        <result column="EXTEND3" property="extend3" />
+        <result column="EXTEND4" property="extend4" />
+        <result column="EXTEND5" property="extend5" />
+        <result column="EXTEND6" property="extend6" />
+        <result column="EXTEND7" property="extend7" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        TEMPPROCESSDEFID AS tempprocessdefid, PROCESSDEFNAME AS processdefname, PROCESSCHNAME AS processchname, DESCRIPTION AS description, CURRENTSTATE AS currentstate, VERSIONSIGN AS versionsign, VERSIONDESC AS versiondesc, CURRENTFLAG AS currentflag, PROCESSDEFCONTENT AS processdefcontent, CREATETIME AS createtime, UPDATETIME AS updatetime, OPERATOR AS operator, PROCESSDEFOWNER AS processdefowner, PACKAGEID AS packageid, PACKAGENAME AS packagename, HASACTIVEINSTANCE AS hasactiveinstance, CATALOGUUID AS cataloguuid, MODIFYSTATE AS modifystate, EXTEND1 AS extend1, EXTEND2 AS extend2, EXTEND3 AS extend3, EXTEND4 AS extend4, EXTEND5 AS extend5, EXTEND6 AS extend6, EXTEND7 AS extend7, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

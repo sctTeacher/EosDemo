@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.AppFuncresourceMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.AppFuncresource">
+        <id column="RESID" property="resid" />
+        <result column="RESTYPE" property="restype" />
+        <result column="RESPATH" property="respath" />
+        <result column="COMPACKNAME" property="compackname" />
+        <result column="RESNAME" property="resname" />
+        <result column="APP_ID" property="appId" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="FUNCCODE" property="funccode" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        RESID AS resid, RESTYPE AS restype, RESPATH AS respath, COMPACKNAME AS compackname, RESNAME AS resname, APP_ID AS appId, TENANT_ID AS tenantId, FUNCCODE AS funccode
+    </sql>
+
+</mapper>

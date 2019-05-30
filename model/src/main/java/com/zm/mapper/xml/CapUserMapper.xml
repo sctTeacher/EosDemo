@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.CapUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.CapUser">
+        <id column="OPERATOR_ID" property="operatorId" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="USER_ID" property="userId" />
+        <result column="PASSWORD" property="password" />
+        <result column="INVALDATE" property="invaldate" />
+        <result column="USER_NAME" property="userName" />
+        <result column="AUTHMODE" property="authmode" />
+        <result column="STATUS" property="status" />
+        <result column="UNLOCKTIME" property="unlocktime" />
+        <result column="MENUTYPE" property="menutype" />
+        <result column="LASTLOGIN" property="lastlogin" />
+        <result column="ERRCOUNT" property="errcount" />
+        <result column="STARTDATE" property="startdate" />
+        <result column="ENDDATE" property="enddate" />
+        <result column="VALIDTIME" property="validtime" />
+        <result column="MACCODE" property="maccode" />
+        <result column="IPADDRESS" property="ipaddress" />
+        <result column="EMAIL" property="email" />
+        <result column="CREATEUSER" property="createuser" />
+        <result column="CREATETIME" property="createtime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        OPERATOR_ID AS operatorId, TENANT_ID AS tenantId, USER_ID AS userId, PASSWORD AS password, INVALDATE AS invaldate, USER_NAME AS userName, AUTHMODE AS authmode, STATUS AS status, UNLOCKTIME AS unlocktime, MENUTYPE AS menutype, LASTLOGIN AS lastlogin, ERRCOUNT AS errcount, STARTDATE AS startdate, ENDDATE AS enddate, VALIDTIME AS validtime, MACCODE AS maccode, IPADDRESS AS ipaddress, EMAIL AS email, CREATEUSER AS createuser, CREATETIME AS createtime
+    </sql>
+
+</mapper>

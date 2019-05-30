@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfFactProcessexecMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfFactProcessexec">
+        <id column="ITMNO" property="itmno" />
+        <result column="PROCESSID" property="processid" />
+        <result column="MONTH" property="month" />
+        <result column="TOTALEXECTIME" property="totalexectime" />
+        <result column="MAXEXECTIME" property="maxexectime" />
+        <result column="MINEXECTIME" property="minexectime" />
+        <result column="STARTEDNUM" property="startednum" />
+        <result column="FINISHEDNUM" property="finishednum" />
+        <result column="SUSPENDEDNUM" property="suspendednum" />
+        <result column="TERMINATEDNUM" property="terminatednum" />
+        <result column="TIMEOUTPROCNUM" property="timeoutprocnum" />
+        <result column="FINISHEDTASKNUM" property="finishedtasknum" />
+        <result column="TIMEOUTTASKNUM" property="timeouttasknum" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ITMNO AS itmno, PROCESSID AS processid, MONTH AS month, TOTALEXECTIME AS totalexectime, MAXEXECTIME AS maxexectime, MINEXECTIME AS minexectime, STARTEDNUM AS startednum, FINISHEDNUM AS finishednum, SUSPENDEDNUM AS suspendednum, TERMINATEDNUM AS terminatednum, TIMEOUTPROCNUM AS timeoutprocnum, FINISHEDTASKNUM AS finishedtasknum, TIMEOUTTASKNUM AS timeouttasknum
+    </sql>
+
+</mapper>

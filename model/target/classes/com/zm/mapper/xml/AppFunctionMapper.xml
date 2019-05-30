@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.AppFunctionMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.AppFunction">
+        <id column="FUNCCODE" property="funccode" />
+        <result column="FUNCNAME" property="funcname" />
+        <result column="FUNCDESC" property="funcdesc" />
+        <result column="FUNCACTION" property="funcaction" />
+        <result column="PARAINFO" property="parainfo" />
+        <result column="ISCHECK" property="ischeck" />
+        <result column="FUNCTYPE" property="functype" />
+        <result column="ISMENU" property="ismenu" />
+        <result column="APP_ID" property="appId" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="FUNCGROUPID" property="funcgroupid" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        FUNCCODE AS funccode, FUNCNAME AS funcname, FUNCDESC AS funcdesc, FUNCACTION AS funcaction, PARAINFO AS parainfo, ISCHECK AS ischeck, FUNCTYPE AS functype, ISMENU AS ismenu, APP_ID AS appId, TENANT_ID AS tenantId, FUNCGROUPID AS funcgroupid
+    </sql>
+
+</mapper>

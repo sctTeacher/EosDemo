@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfauditrecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wfauditrecord">
+        <id column="AUDITRECORDID" property="auditrecordid" />
+        <result column="UNIQUEID" property="uniqueid" />
+        <result column="LOGOCCASION" property="logoccasion" />
+        <result column="ACTIONTYPE" property="actiontype" />
+        <result column="ACTIONNAME" property="actionname" />
+        <result column="USERNAME" property="username" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="IPADDRESS" property="ipaddress" />
+        <result column="OPTIONLEVEL" property="optionlevel" />
+        <result column="PROCESSDEFINEID" property="processdefineid" />
+        <result column="PROCESSINSTID" property="processinstid" />
+        <result column="ACTIVITYINSTID" property="activityinstid" />
+        <result column="WORKITEMID" property="workitemid" />
+        <result column="MESSAGE" property="message" />
+        <result column="PARENTPROCINSTID" property="parentprocinstid" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        AUDITRECORDID AS auditrecordid, UNIQUEID AS uniqueid, LOGOCCASION AS logoccasion, ACTIONTYPE AS actiontype, ACTIONNAME AS actionname, USERNAME AS username, CREATETIME AS createtime, IPADDRESS AS ipaddress, OPTIONLEVEL AS optionlevel, PROCESSDEFINEID AS processdefineid, PROCESSINSTID AS processinstid, ACTIVITYINSTID AS activityinstid, WORKITEMID AS workitemid, MESSAGE AS message, PARENTPROCINSTID AS parentprocinstid, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

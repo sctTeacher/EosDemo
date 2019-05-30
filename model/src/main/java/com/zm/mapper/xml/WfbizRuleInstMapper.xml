@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WfbizRuleInstMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.WfbizRuleInst">
+        <id column="BUSIRULEUUID" property="busiruleuuid" />
+        <result column="BUSIRULENAME" property="busirulename" />
+        <result column="CATALOGUUID" property="cataloguuid" />
+        <result column="BUSIRULETYPE" property="busiruletype" />
+        <result column="MARK" property="mark" />
+        <result column="BUSIRULECONTENT" property="busirulecontent" />
+        <result column="PROVIDER" property="provider" />
+        <result column="UPTTIME" property="upttime" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        BUSIRULEUUID AS busiruleuuid, BUSIRULENAME AS busirulename, CATALOGUUID AS cataloguuid, BUSIRULETYPE AS busiruletype, MARK AS mark, BUSIRULECONTENT AS busirulecontent, PROVIDER AS provider, UPTTIME AS upttime, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

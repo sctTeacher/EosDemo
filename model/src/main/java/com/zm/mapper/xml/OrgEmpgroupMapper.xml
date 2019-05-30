@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.OrgEmpgroupMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.OrgEmpgroup">
+        <id column="GROUPID" property="groupid" />
+        <result column="EMPID" property="empid" />
+        <result column="ISMAIN" property="ismain" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="APP_ID" property="appId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        GROUPID AS groupid, EMPID AS empid, ISMAIN AS ismain, TENANT_ID AS tenantId, APP_ID AS appId
+    </sql>
+
+</mapper>

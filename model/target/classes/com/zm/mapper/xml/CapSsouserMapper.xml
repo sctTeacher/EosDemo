@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.CapSsouserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.CapSsouser">
+        <id column="OPERATOR_ID" property="operatorId" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="USER_ID" property="userId" />
+        <result column="PASSWORD" property="password" />
+        <result column="USER_NAME" property="userName" />
+        <result column="EMAIL" property="email" />
+        <result column="STATUS" property="status" />
+        <result column="UNLOCKTIME" property="unlocktime" />
+        <result column="LASTLOGIN" property="lastlogin" />
+        <result column="ERRCOUNT" property="errcount" />
+        <result column="MACCODE" property="maccode" />
+        <result column="IPADDRESS" property="ipaddress" />
+        <result column="CREATEUSER" property="createuser" />
+        <result column="CREATETIME" property="createtime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        OPERATOR_ID AS operatorId, TENANT_ID AS tenantId, USER_ID AS userId, PASSWORD AS password, USER_NAME AS userName, EMAIL AS email, STATUS AS status, UNLOCKTIME AS unlocktime, LASTLOGIN AS lastlogin, ERRCOUNT AS errcount, MACCODE AS maccode, IPADDRESS AS ipaddress, CREATEUSER AS createuser, CREATETIME AS createtime
+    </sql>
+
+</mapper>

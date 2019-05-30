@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WftimerMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wftimer">
+        <id column="TIMERID" property="timerid" />
+        <result column="TIMERNAME" property="timername" />
+        <result column="TIMERTYPE" property="timertype" />
+        <result column="TIMERKIND" property="timerkind" />
+        <result column="OBJECTID" property="objectid" />
+        <result column="PARAMETER" property="parameter" />
+        <result column="CURRENTSTATE" property="currentstate" />
+        <result column="REGISTETIME" property="registetime" />
+        <result column="FIRSTTRIGGETIME" property="firsttriggetime" />
+        <result column="CYCLETIMES" property="cycletimes" />
+        <result column="NEXTTRIGGETIME" property="nexttriggetime" />
+        <result column="LEFTCYCLETIMES" property="leftcycletimes" />
+        <result column="CYCLEINTERVAL" property="cycleinterval" />
+        <result column="REGTIMEDESC" property="regtimedesc" />
+        <result column="TRIGTIMEDESC" property="trigtimedesc" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="EXTEND2" property="extend2" />
+        <result column="TENANT_ID" property="tenantId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        TIMERID AS timerid, TIMERNAME AS timername, TIMERTYPE AS timertype, TIMERKIND AS timerkind, OBJECTID AS objectid, PARAMETER AS parameter, CURRENTSTATE AS currentstate, REGISTETIME AS registetime, FIRSTTRIGGETIME AS firsttriggetime, CYCLETIMES AS cycletimes, NEXTTRIGGETIME AS nexttriggetime, LEFTCYCLETIMES AS leftcycletimes, CYCLEINTERVAL AS cycleinterval, REGTIMEDESC AS regtimedesc, TRIGTIMEDESC AS trigtimedesc, EXTEND1 AS extend1, EXTEND2 AS extend2, TENANT_ID AS tenantId
+    </sql>
+
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zm.mapper.WftaskresourceinfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zm.model.Wftaskresourceinfo">
+        <id column="TASKID" property="taskid" />
+        <result column="TASKNAME" property="taskname" />
+        <result column="QUEUENAME" property="queuename" />
+        <result column="EXCLUDEUNIQUEID" property="excludeuniqueid" />
+        <result column="EXCLUDEPARTICIPANT" property="excludeparticipant" />
+        <result column="CREATETIME" property="createtime" />
+        <result column="STATUS" property="status" />
+        <result column="PRIORITY" property="priority" />
+        <result column="RECEIVETIME" property="receivetime" />
+        <result column="RECOVERTIME" property="recovertime" />
+        <result column="SERVERID" property="serverid" />
+        <result column="TENANT_ID" property="tenantId" />
+        <result column="PROCESSINSTID" property="processinstid" />
+        <result column="ACTIVITYINSTID" property="activityinstid" />
+        <result column="EXTEND1" property="extend1" />
+        <result column="EXTEND2" property="extend2" />
+        <result column="EXTEND3" property="extend3" />
+        <result column="EXTEND4" property="extend4" />
+        <result column="EXTEND5" property="extend5" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        TASKID AS taskid, TASKNAME AS taskname, QUEUENAME AS queuename, EXCLUDEUNIQUEID AS excludeuniqueid, EXCLUDEPARTICIPANT AS excludeparticipant, CREATETIME AS createtime, STATUS AS status, PRIORITY AS priority, RECEIVETIME AS receivetime, RECOVERTIME AS recovertime, SERVERID AS serverid, TENANT_ID AS tenantId, PROCESSINSTID AS processinstid, ACTIVITYINSTID AS activityinstid, EXTEND1 AS extend1, EXTEND2 AS extend2, EXTEND3 AS extend3, EXTEND4 AS extend4, EXTEND5 AS extend5
+    </sql>
+
+</mapper>
